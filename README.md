@@ -11,15 +11,15 @@ end
 
 # Method 2
 
-MachoInjectResourceRaw('unsaferesource', [[
+MachoInjectResourceRaw('monitor', [[
     CreateVehicle('bmx', GetEntityCoords(PlayerPedId()), 0.0, true, false)
-    print('hello motha fucka')
+    print('YO')
     TriggerEvent('esx_ambulancejob:revive')
     --TriggerServerEvent('SERVER_EVENT')
 ]])
 
 # Method 3
-
+            
 MachoInjectResourceRaw('monitor', [[
     local function SafeWrap(setFunc)
         return function(...)
